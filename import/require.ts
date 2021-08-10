@@ -12,6 +12,8 @@ const http = require("http");
  * but I disabled it in the compile options in `tsconfig.json`).
  * 
  * So in TypeScript always use import whenever possible, the compiled js file will use require, because node works best with it
+ * 
+ * Tip: The commented values in the tsconfig.json are the default values
  */
  const server = http.createServer((req, res) => {
     res.writeHead(200, { 'Content-Type': 'application/json' });
